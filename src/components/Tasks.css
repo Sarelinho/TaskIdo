@@ -74,3 +74,29 @@
     color: #888;
   }
   
+  @media(max-width:768px){
+    .todos-wrapper{
+            margin-top: 1rem;
+    }
+    .task-input{
+        width: 22rem;
+    }
+    .todo-item{
+        width: 17rem;
+    }
+    .todo-link{
+        width: 100px;
+    }
+  }
+
+  @media(max-width:425px){
+    .task-input{
+        width: 17rem;
+    }
+    .todo-item{
+        width: 18rem;
+    }
+    .todo-link{
+        width: 80px;
+    }
+  }

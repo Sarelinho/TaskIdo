@@ -61,6 +61,7 @@ export const Tasks = () => {
     setText("");
     setClicked(false)
     notify('Task add successfully.','success');
+    
   };
 
   useEffect(() => {
@@ -70,12 +71,13 @@ export const Tasks = () => {
 
   return (
     <main className="container">
-      Task
+      
       <div style={{ display: "flex", marginLeft: "1.5rem" }}>
         <input
           type="text"
           className="task-input"
           value={text}
+          disabled={clicked} // disable the input box
           onChange={({ target }) => setText(target.value)}
           placeholder="Add a new task..."
           onKeyDown={({ key }) => key === "Enter" && handleAddTodo()}

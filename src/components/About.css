@@ -1,0 +1,16 @@
+.subTitle{
+    font-size: 2rem;
+}
+.description{
+    width: 50%;
+    text-align: center;
+    color:dimgray
+}
+
+@media(max-width:768px){
+    .subTitle{
+        font-size: x-large;
+        color: red;
+    }
+    .description{width: 95%;}
+}

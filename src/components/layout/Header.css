@@ -24,3 +24,17 @@
 .link:hover{
     color: #b1b1b1
 }
+
+@media(max-width:768px)
+{
+    .nav{
+        padding-top: 3px;
+        padding-right: 5px;
+        font-size: medium;
+    }
+    .links-wrapper
+    {
+        gap: 4rem;
+
+    }
+}

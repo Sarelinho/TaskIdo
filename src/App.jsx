@@ -1,20 +1,24 @@
 
 import { Routes,Route } from 'react-router-dom';
-import { Flip, ToastContainer } from 'react-toastify';
-import {Home, Tasks,Header} from './Components';
+import { Flip, ToastContainer } from 'react-toastify';  
+import {Home, Tasks,Header,About} from './components';
+import { Task } from './components/Task';
 
 function App() {
 
   return (
+
     <>
     <ToastContainer theme='colored' position='top-right'/>
     <Header/>
       <Routes>
         <Route path="/" element =    {<Home/>} />
         <Route path="/tasks" element={<Tasks/>}/>
-      </Routes>
-      
-    </>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/Tasks/:id" element={<Task/>}/>
+
+      </Routes>    
+    </>  
     
  )
 }
