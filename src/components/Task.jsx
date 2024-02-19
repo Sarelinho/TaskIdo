@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import './task.css'
+import './Task.css'
 
 
 export const Task = () => {
